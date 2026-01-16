@@ -62,3 +62,6 @@ body {
     color: blue;
     font-size: 30px;
 }
+button {
+    border-radius: 12px;
+}
