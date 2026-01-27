@@ -9,7 +9,11 @@ let multiply = function(a, b) {
     return a * b;
 }
 let divide = function (a, b) {
+      if(b === 0) {
+      alert('ERROR');     
+    }
     return a / b;
+
 }
 
 let numberA = '';
@@ -38,11 +42,11 @@ function handleOperator(operator) {
     currentOperator = operator;
   } else { 
     let result = operate(currentOperator, Number(numberA), Number(numberB))
-    numberA = result;
+    numberA = Math.round(result * 100) / 100;
     numberB = '';
     currentOperator = operator;
     enteringSecondNumber = true;
-    display.textContent = result;    
+    display.textContent = Math.round(result * 100) / 100;    
   }
 }
 
@@ -90,8 +94,10 @@ document.getElementById("subtract-button").onclick = function() {
 }
 document.getElementById("equal-button").onclick = function() {
   result = operate(currentOperator, Number(numberA), Number(numberB));
-  display.textContent = result;
-
+  display.textContent = Math.round(result * 100) / 100;;
+  numberA = '';
+  numberB = '';
+  enteringSecondNumber = false
 }
 document.getElementById("clear-button").onclick = function() {
   numberA = '';
