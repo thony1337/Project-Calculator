@@ -37,12 +37,15 @@ body {
     flex-wrap: wrap;
     align-items: stretch;
     flex-direction: column;
-    gap: 30px;
+    gap: 5px;
     justify-content: center;
     padding: 10px;
 }
 #numbers * {
     background-color: orangered;
+    width: 60px;
+    height: 160px;
+    min-width: 0;
 }
 #operators-button * {
     background-color: orangered;
