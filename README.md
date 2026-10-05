@@ -1,5 +1,5 @@
 # JavaScript Calculator
-
+LIVE PREVIEW : https://thony1337.github.io/Project-Calculator/
 A basic calculator built with HTML, CSS, and JavaScript. 
 Supports addition, subtraction, multiplication, division, 
 and chained operations.
